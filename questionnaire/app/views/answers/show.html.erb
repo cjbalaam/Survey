@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nutella:</strong>
+  <%= @answer.nutella %>
+</p>
+
+<p>
+  <strong>Organic:</strong>
+  <%= @answer.organic %>
+</p>
+
+<p>
+  <strong>Cabbage:</strong>
+  <%= @answer.cabbage %>
+</p>
+
+<%= link_to 'Edit', edit_answer_path(@answer) %> |
+<%= link_to 'Back', answers_path %>

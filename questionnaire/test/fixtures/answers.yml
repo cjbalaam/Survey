@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nutella: 
+  organic: 
+  cabbage: 
+
+two:
+  nutella: 
+  organic: 
+  cabbage: 

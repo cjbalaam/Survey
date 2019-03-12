@@ -1,0 +1,38 @@
+<h1 align="center">Shopping Survey</h1>
+<div class="container">
+  Hello! For this survey, you have 15 dollars and are going shopping. <br>
+  These are the items that you can buy, their prices and nutritional value <br>
+  <i> The price is in euros and the Nutriscore ranges from A (best) to F (worst)</i>
+</div>
+<p>
+<div class="container">
+  <strong>Nutella</strong>
+  <button data-toggle="collapse" data-target="#nut">Show Nutriscore</button>
+  <div id="nut" class="collapse">
+    Here would go the Nutriscore
+  </div>
+</div>
+</p>
+
+
+<p>
+<div class="container">
+  <strong>Organic Nutella</strong>
+  <button data-toggle="collapse" data-target="#org">Show Nutriscore</button>
+  <div id="org" class="collapse">
+    Nutriscore 2
+  </div>
+</div>
+</p>
+<p>
+<div class="container">
+  <strong>Cabbage</strong>
+  <button data-toggle="collapse" data-target="#cab">Show Nutriscore</button>
+  <div id="cab" class="collapse">
+    Nutriscore 3
+  </div>
+</div>
+</p>
+
+<%= render 'form', answer: @answer %>
+

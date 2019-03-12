@@ -1,0 +1,50 @@
+
+<%= form_with(model: answer, local: true) do |form| %>
+  <% if answer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(answer.errors.count, "error") %> prohibited this answer from being saved:</h2>
+
+      <ul>
+      <% answer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div class="container">
+  <div class="form-group">
+    <%= form.label :nutella, "Did you buy nutella?" %>
+    <%= form.label :nutella, "Yes", :value => "true" %>
+    <%= form.radio_button :nutella, true %>
+    <%= form.label :nutella, "No", :value=>"false" %>
+    <%= form.radio_button :nutella, false %>
+  </div>
+</div>
+
+<div class="container">
+  <div class="form-group">
+    <%= form.label :organic, "Did you buy organic nutella?" %>
+    <%= form.label :organic, "Yes", :value => "true" %>
+    <%= form.radio_button :organic, true %>
+    <%= form.label :organic, "No", :value=>"false" %>
+    <%= form.radio_button :organic, false %>
+  </div>
+</div>
+
+<div class="container">
+  <div class="form-group">
+    <%= form.label :cabbage, "Did you buy cabbages?" %>
+    <%= form.label :cabbage, "Yes", :value => "true" %>
+    <%= form.radio_button :cabbage, true %>
+    <%= form.label :cabbage, "No", :value=>"false" %>
+    <%= form.radio_button :cabbage, false %>
+  </div>
+</div>
+
+<div class="container">
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+</div>
+
+<% end %>
