@@ -1,3 +1,11 @@
+<script>
+    $(function() {
+        $( "#button" ).click(function() {
+            $( "#item" ).toggle();
+        });
+    });
+</script>
+
 <h1 align="center">Shopping Survey</h1>
 <div class="container">
   Hello! For this survey, you have 15 dollars and are going shopping. <br>
@@ -36,8 +44,5 @@
 
 <%= render 'form', answer: @answer %>
 
-<div class="btn-group" role="group" aria-label="Basic example">
-  <button type="button" class="btn btn-secondary">Left</button>
-  <button type="button" class="btn btn-secondary">Middle</button>
-  <button type="button" class="btn btn-secondary">Right</button>
-</div>
+<a id="button">Show/Hide</a>
+<div id="item">Item</div>
